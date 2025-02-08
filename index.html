@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本地活动查询</title>
+</head>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiJL1Ohb7-VVLeuMocsbvud7ntwp1_SWk&callback=initMap" async defer></script>
+
+<body>
+    <header>
+        <h1>本地活动查询</h1>
+        <input type="text" id="search" placeholder="搜索活动...">
+        <button id="filter">筛选</button>
+		
+    </header>
+<div id="filters">
+    <button data-filter="all">全部</button>
+    <button data-filter="啤酒节">啤酒节</button>
+    <button data-filter="音乐节">音乐节</button>
+    <button data-filter="夜市">夜市</button>
+</div>
+    <main>
+        <section id="activities">
+            <!-- 活动列表将动态加载到这里 -->
+        </section>
+    </main>
+	<script src="script.js"></script>
+</body>
+</html>
+<div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+<div id="loading">加载中...</div>
